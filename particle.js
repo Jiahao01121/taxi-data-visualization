@@ -138,19 +138,19 @@ ParticleSystem.prototype.run = function() {
     } //if
   }  //for
 };  //proto_run
-// ParticleSystem.prototype.showLength = function(){
-//   // console.log(this.particles.length);
-//   fill(36+this.particles.length- random(2,-1),38+this.particles.length- random(2,-1),40+this.particles.length - random(2,-1));
-//   if(this.particles.length>0 && this.particles.length<=350){
-//     textSize(map(this.particles.length,0,350,15,20));
-//   }else if(this.particles.length>=351 && this.particles.length<=650){
-//   textSize(map(this.particles.length,351,650,21,28));
-// }else if(this.particles.length>=651&& this.particles.length<=950){
-//   textSize(map(this.particles.length,651,950,29,54));
-// }else{
-//   textSize(55);
-// }
-// text(this.particles.length, 50, 740-50, 70, 80);
-// textSize(10);
-// text("Taxi-on-Service" , 50, 710-50, 70, 80);
-// } //proto_showText
+ParticleSystem.prototype.showLength = function(){
+  // console.log(this.particles.length);
+  fill(36+this.particles.length- random(2,-1),38+this.particles.length- random(2,-1),40+this.particles.length - random(2,-1));
+  if(this.particles.length>0 && this.particles.length<=350){
+    textSize(map(this.particles.length,0,350,15,20));
+  }else if(this.particles.length>=351 && this.particles.length<=650){
+  textSize(map(this.particles.length,351,650,21,28));
+}else if(this.particles.length>=651&& this.particles.length<=950){
+  textSize(map(this.particles.length,651,950,29,54));
+}else{
+  textSize(55);
+}
+text(this.particles.length, 50, 740-50, 70, 80);
+textSize(10);
+text("Taxi-on-Service" , 50, 710-50, 70, 80);
+} //proto_showText

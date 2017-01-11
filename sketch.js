@@ -87,67 +87,67 @@ if(iterator > dataLength){
 // init particleSystem
 particleSystem.run();
 
-// particleSystem.showLength();
+particleSystem.showLength();
 /***********************************************************************************************************/
 //钱数
-// function show_money_text(){
-//   currency_text += total_amount;
-// }
-// setTimeout(show_money_text,particleSequence / speedGUI.speed);
-// fill(255,255,255,map(currency_text,0,5000,0,255));
-// textSize(10);
-// text("Currency flow",470, 710-50, 230, 80);
-//
-// if(currency_text>0 && currency_text<1000){
-//   textSize(map(currency_text,0,1000,15,20));
-// }else if(currency_text>1001 && currency_text<5000){
-// textSize(map(currency_text,1001,5000,21,31));
-// }else if(currency_text>5001&& currency_text<30000){
-// textSize(map(currency_text,5001,30000,32,54));
-// }else{
-// textSize(55);
-// }
-// text(`$${Math.round(currency_text)}`, 470, 740-50, 70, 80);
+function show_money_text(){
+  currency_text += total_amount;
+}
+setTimeout(show_money_text,particleSequence / speedGUI.speed);
+fill(255,255,255,map(currency_text,0,5000,0,255));
+textSize(10);
+text("Currency flow",470, 710-50, 230, 80);
+
+if(currency_text>0 && currency_text<1000){
+  textSize(map(currency_text,0,1000,15,20));
+}else if(currency_text>1001 && currency_text<5000){
+textSize(map(currency_text,1001,5000,21,31));
+}else if(currency_text>5001&& currency_text<30000){
+textSize(map(currency_text,5001,30000,32,54));
+}else{
+textSize(55);
+}
+text(`$${Math.round(currency_text)}`, 470, 740-50, 70, 80);
 /***********************************************************************************************************/
 //小费数
-// function show_tips_text(){
-//   tips_text += tip_amount;
-// }
-// setTimeout(show_tips_text,particleSequence / speedGUI.speed);
-// fill(255,255,255,map(tips_text,0,500,0,255));
-// textSize(10);
-// text("Tips count",890, 710-50, 230, 80);
-//
-// if(tips_text>0 && tips_text<1000){
-//   textSize(map(tips_text,0,1000,15,19));
-// }else if(tips_text>1001 && tips_text<5000){
-// textSize(map(tips_text,1001,5000,20,28));
-// }else if(tips_text>5001&& tips_text<170000){
-// textSize(map(tips_text,5001,17000,29,54));
-// }else{
-// textSize(55);
-// }
-// text(`$${Math.round(tips_text)}`, 890, 740-50, 70, 80);
+function show_tips_text(){
+  tips_text += tip_amount;
+}
+setTimeout(show_tips_text,particleSequence / speedGUI.speed);
+fill(255,255,255,map(tips_text,0,500,0,255));
+textSize(10);
+text("Tips count",890, 710-50, 230, 80);
+
+if(tips_text>0 && tips_text<1000){
+  textSize(map(tips_text,0,1000,15,19));
+}else if(tips_text>1001 && tips_text<5000){
+textSize(map(tips_text,1001,5000,20,28));
+}else if(tips_text>5001&& tips_text<170000){
+textSize(map(tips_text,5001,17000,29,54));
+}else{
+textSize(55);
+}
+text(`$${Math.round(tips_text)}`, 890, 740-50, 70, 80);
 /***********************************************************************************************************/
 /***********************************************************************************************************/
 //total carrying
-// function show_people_text(){
-//   people_text += passenger_count;
-// }
-// setTimeout(show_people_text,particleSequence / speedGUI.speed);
-// fill(255,255,255,map(people_text,0,400,0,255));
-// textSize(10);
-// text("Total Carrying",1310, 710-50, 230, 80);
-//
-// if(people_text>0 && people_text<500){
-//   textSize(map(people_text,0,500,15,19));
-// }else if(people_text>501 && people_text<1000){
-// textSize(map(people_text,501,1000,20,28));
-// }else if(people_text>1001&& people_text<3000){
-// textSize(map(people_text,1001,3000,29,54));
-// }else{
-// textSize(55);
-// }
-// text(`${people_text}`, 1310, 740-50, 70, 80);
+function show_people_text(){
+  people_text += passenger_count;
+}
+setTimeout(show_people_text,particleSequence / speedGUI.speed);
+fill(255,255,255,map(people_text,0,400,0,255));
+textSize(10);
+text("Total Carrying",1310, 710-50, 230, 80);
+
+if(people_text>0 && people_text<500){
+  textSize(map(people_text,0,500,15,19));
+}else if(people_text>501 && people_text<1000){
+textSize(map(people_text,501,1000,20,28));
+}else if(people_text>1001&& people_text<3000){
+textSize(map(people_text,1001,3000,29,54));
+}else{
+textSize(55);
+}
+text(`${people_text}`, 1310, 740-50, 70, 80);
 /***********************************************************************************************************/
 } //draw
