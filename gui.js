@@ -7,9 +7,9 @@ var speedGUI = {
     speed : 1,
     transparent_base_on_travel : true,
 
-    R_arrive_color : 242,
-    G_arrive_color : 205,
-    B_arrive_color : 80,
+    R_arrive_color : 44,
+    G_arrive_color : 234,
+    B_arrive_color : 232,
     disable : false,
 };
 
