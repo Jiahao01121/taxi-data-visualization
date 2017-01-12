@@ -30,7 +30,7 @@ var passenger = {
   amount : false
 }
 var backgroundColor = {
-  background : [ 183, 213, 230 ],
+  background : [ 0, 0, 0 ],
 }
 
 var mapColor = {
