@@ -26,29 +26,29 @@ var data,
 function preload(){
   data = loadJSON("particleDataFeed.json");
   // geo = loadJSON('out.json')
-  bgMap = loadJSON("out_new.json")
+  // bgMap = loadJSON("out_new.json")
 }
 
 function setup() {
 createCanvas(window.innerWidth,window.innerHeight);
 }
 
-var cofigMap =  () => {
-  const context = d3.select('#defaultCanvas0').node().getContext('2d');
-  var path = d3.geoPath().context(context);
-  // context.strokeStyle = 'rgba(255,0,0,1)';
-  context.beginPath();
-  path(bgMap);
-  context.stroke();
-  context.closePath();
-  context.fillStyle = `rgba(20, 20, 20, 1)`;
-  context.fill();
-}
+// var cofigMap =  () => {
+//   const context = d3.select('#defaultCanvas0').node().getContext('2d');
+//   var path = d3.geoPath().context(context);
+//   // context.strokeStyle = 'rgba(255,0,0,1)';
+//   context.beginPath();
+//   path(bgMap);
+//   context.stroke();
+//   context.closePath();
+//   context.fillStyle = `rgba(20, 20, 20, 1)`;
+//   context.fill();
+// }
 
 function draw() {
 //background color and map
   background(backgroundColor.background)
-  cofigMap()
+  // cofigMap()
 //timer
   if(speedGUI.speed ==1){s = new Date(t += 22 * speedGUI.speed);console.log("normalSpeed");}
   else{s = new Date(t += 20 * Math.round(speedGUI.speed+20));console.log("accelerated");}
